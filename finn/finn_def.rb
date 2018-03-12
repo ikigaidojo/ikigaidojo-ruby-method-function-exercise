@@ -1,28 +1,24 @@
+#practice using functions
 
-
-
-def prompt(message, name)
+def prompt(message)
 	puts "#{message}"
-	return gets.chomp
-	puts "Thank you, #{name}" #name will only work if name has been defined before. 
+	answer = gets.chomp
+	puts "Thank you"  
+	return answer
 end
-
 
 def display_name(name)
 	puts "Good day. Your name is #{name},"
 end
 
-
 def display_year_born(year_born)
 	puts "You were born in #{year_born},"
 end
-
 
 def display_new_age(year_born)
 	new_age = 2017 - year_born.to_i - 5
 	puts "Five years ago, your age was #{new_age} years old,"
 end
-
 
 name = prompt("Please tell me, kind soul, what is your name?")
 
