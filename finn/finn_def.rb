@@ -19,7 +19,7 @@ def display_new_age(year_born)
   balance = 1 # calculation is one year off so balance required
   current_year = 2018
   five_years = 5
-  new_age = current_year - year_born - five_years - balance
+  new_age = current_year - year_born.to_i - five_years - balance
   puts "Five years ago, your age was #{new_age} years old,"
 end
 
