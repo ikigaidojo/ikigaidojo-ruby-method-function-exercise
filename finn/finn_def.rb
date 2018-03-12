@@ -1,10 +1,10 @@
 
 
 
-def prompt(message)
+def prompt(message, name)
 	puts "#{message}"
 	return gets.chomp
-	puts "Thank you"
+	puts "Thank you, #{name}" #name will only work if name has been defined before. 
 end
 
 
